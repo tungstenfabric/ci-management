@@ -1,0 +1,4 @@
+[gerrit]
+host=gerrit.tungsten.io
+port=29418
+project=ci-management.git

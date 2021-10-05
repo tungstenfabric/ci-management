@@ -1,0 +1,26 @@
+# Ignore Vim temporary files
+.*.sw?
+
+# Ignore changes to the JJB Configuration File
+jenkins.ini
+
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+
+# Python
+.tox/
+
+# global-jjb
+archives/
+
+# Packer
+.galaxy/
+*.retry
+cloud-env.json
