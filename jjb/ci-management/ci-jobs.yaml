@@ -1,0 +1,35 @@
+---
+- ci_jobs_common: &ci_jobs_common
+    name: ci-jobs-common
+    # Defines common ci-jobs configuration
+
+    project: ci-management
+    project-name: ci-management
+    build-node: prd-centos7-builder-2c-2g
+    jjb-version: 3.5.0
+
+- project:
+    name: ci-jobs
+    build-node-label-check: true
+
+    jobs:
+      - '{project-name}-ci-jobs'
+      - 'gerrit-info-yaml-verify'
+
+    <<: *ci_jobs_common
+
+    views:
+      - project-view
+
+- project:
+    name: openstack-cron
+
+    jobs:
+      - gerrit-openstack-cron
+
+    <<: *ci_jobs_common
+
+    jenkins-urls: >
+        https://jenkins.tungsten.io/
+        https://jenkins.tungsten.io/sandbox/
+    openstack-cloud: vex

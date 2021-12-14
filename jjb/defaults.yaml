@@ -1,0 +1,19 @@
+---
+
+### Global JJB defaults
+
+- defaults:
+    name: global
+
+    # lf-infra-defaults
+    jenkins-ssh-credential: jenkins
+    lftools-version: <1.0.0
+
+    # build defaults
+    build-days-to-keep: 7
+    # Timeout in minutes
+    build-node: centos7-builder-2c-2g
+
+    # openstack-cron email notification defaults
+    failure-notification: "releng+tungsten.io@linuxfoundation.org"
+    failure-notification-prefix: "[releng]"

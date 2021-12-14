@@ -1,0 +1,26 @@
+---
+- ci_packer_common: &ci_packer_common
+    name: ci-packer-common
+    # Defines common ci-packer configuration
+
+    project: ci-management
+    project-name: ci-management
+    build-node: prd-centos7-builder-2c-2g
+
+- project:
+    name: packer-verify
+    jobs:
+      - gerrit-packer-verify
+
+    <<: *ci_packer_common
+
+- project:
+    name: packer-builder-jobs
+    jobs:
+      - gerrit-packer-merge
+
+    <<: *ci_packer_common
+
+    templates: builder
+    platforms:
+      - centos-7
