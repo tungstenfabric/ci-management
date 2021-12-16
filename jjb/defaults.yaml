@@ -17,3 +17,6 @@
     # openstack-cron email notification defaults
     failure-notification: "releng+tungsten.io@linuxfoundation.org"
     failure-notification-prefix: "[releng]"
+
+    # default gerrit server definition
+    gerrit-server-name: gerrit.tungsten.io
