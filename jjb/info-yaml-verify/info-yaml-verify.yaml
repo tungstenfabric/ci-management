@@ -1,0 +1,27 @@
+---
+- project:
+    name: info-yaml-verify-project-view
+    project-name: info-yaml-verify
+    views:
+      - common-view:
+    view-name: info-yaml-verify
+    view-description: 'List of INFO verify jobs for tungsten projects'
+    view-regex: '.*info-yaml-verify.*'
+
+- project:
+    name: tungstenfabric-tf-controller-info-yaml-verify
+    project-name: tungstenfabric-tf-controller
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-controller
+    branch: master
+
+- project:
+    name: tungstenfabric-tf-vrouter-info-yaml-verify
+    project-name: tungstenfabric-tf-vrouter
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-vrouter
+    branch: master
