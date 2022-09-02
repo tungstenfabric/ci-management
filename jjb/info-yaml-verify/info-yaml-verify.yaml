@@ -9,6 +9,62 @@
     view-regex: '.*info-yaml-verify.*'
 
 - project:
+    name: tungstenfabric-tf-analytics-info-yaml-verify
+    project-name: tungstenfabric-tf-analytics
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-analytics
+    branch: master
+- project:
+    name: tungstenfabric-tf-ansible-deployer-info-yaml-verify
+    project-name: tungstenfabric-tf-ansible-deployer
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-ansible-deployer
+    branch: master
+- project:
+    name: tungstenfabric-tf-api-client-info-yaml-verify
+    project-name: tungstenfabric-tf-api-client
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-api-client
+    branch: master
+- project:
+    name: tungstenfabric-tf-build-info-yaml-verify
+    project-name: tungstenfabric-tf-build
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-build
+    branch: master
+- project:
+    name: tungstenfabric-tf-charms-info-yaml-verify
+    project-name: tungstenfabric-tf-charms
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-charms
+    branch: master
+- project:
+    name: tungstenfabric-tf-common-info-yaml-verify
+    project-name: tungstenfabric-tf-common
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-common
+    branch: master
+- project:
+    name: tungstenfabric-tf-container-builder-info-yaml-verify
+    project-name: tungstenfabric-tf-container-builder
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-container-builder
+    branch: master
+- project:
     name: tungstenfabric-tf-controller-info-yaml-verify
     project-name: tungstenfabric-tf-controller
     jobs:
@@ -16,7 +72,254 @@
     build-node: centos7-builder-2c-2g
     project: tungstenfabric/tf-controller
     branch: master
-
+- project:
+    name: tungstenfabric-tf-deployers-containers-info-yaml-verify
+    project-name: tungstenfabric-tf-deployers-containers
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-deployers-containers
+    branch: master
+- project:
+    name: tungstenfabric-tf-deployment-test-info-yaml-verify
+    project-name: tungstenfabric-tf-deployment-test
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-deployment-test
+    branch: master
+- project:
+    name: tungstenfabric-tf-dev-env-info-yaml-verify
+    project-name: tungstenfabric-tf-dev-env
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-dev-env
+    branch: master
+- project:
+    name: tungstenfabric-tf-dev-test-info-yaml-verify
+    project-name: tungstenfabric-tf-dev-test
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-dev-test
+    branch: master
+- project:
+    name: tungstenfabric-tf-devstack-info-yaml-verify
+    project-name: tungstenfabric-tf-devstack
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-devstack
+    branch: master
+- project:
+    name: tungstenfabric-tf-dpdk-info-yaml-verify
+    project-name: tungstenfabric-tf-dpdk
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-dpdk
+    branch: master
+- project:
+    name: tungstenfabric-tf-fabric-utils-info-yaml-verify
+    project-name: tungstenfabric-tf-fabric-utils
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-fabric-utils
+    branch: master
+- project:
+    name: tungstenfabric-tf-heat-plugin-info-yaml-verify
+    project-name: tungstenfabric-tf-heat-plugin
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-heat-plugin
+    branch: master
+- project:
+    name: tungstenfabric-tf-helm-deployer-info-yaml-verify
+    project-name: tungstenfabric-tf-helm-deployer
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-helm-deployer
+    branch: master
+- project:
+    name: tungstenfabric-tf-java-api-info-yaml-verify
+    project-name: tungstenfabric-tf-java-api
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-java-api
+    branch: master
+- project:
+    name: tungstenfabric-tf-jenkins-info-yaml-verify
+    project-name: tungstenfabric-tf-jenkins
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-jenkins
+    branch: master
+- project:
+    name: tungstenfabric-tf-kolla-ansible-info-yaml-verify
+    project-name: tungstenfabric-tf-kolla-ansible
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-kolla-ansible
+    branch: master
+- project:
+    name: tungstenfabric-tf-neutron-plugin-info-yaml-verify
+    project-name: tungstenfabric-tf-neutron-plugin
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-neutron-plugin
+    branch: master
+- project:
+    name: tungstenfabric-tf-nova-vif-driver-info-yaml-verify
+    project-name: tungstenfabric-tf-nova-vif-driver
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-nova-vif-driver
+    branch: master
+- project:
+    name: tungstenfabric-tf-openshift-info-yaml-verify
+    project-name: tungstenfabric-tf-openshift
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-openshift
+    branch: master
+- project:
+    name: tungstenfabric-tf-openshift-ansible-info-yaml-verify
+    project-name: tungstenfabric-tf-openshift-ansible
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-openshift-ansible
+    branch: master
+- project:
+    name: tungstenfabric-tf-operator-info-yaml-verify
+    project-name: tungstenfabric-tf-operator
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-operator
+    branch: master
+- project:
+    name: tungstenfabric-tf-packages-info-yaml-verify
+    project-name: tungstenfabric-tf-packages
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-packages
+    branch: master
+- project:
+    name: tungstenfabric-tf-specs-info-yaml-verify
+    project-name: tungstenfabric-tf-specs
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-specs
+    branch: master
+- project:
+    name: tungstenfabric-tf-test-info-yaml-verify
+    project-name: tungstenfabric-tf-test
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-test
+    branch: master
+- project:
+    name: tungstenfabric-tf-third-party-info-yaml-verify
+    project-name: tungstenfabric-tf-third-party
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-third-party
+    branch: master
+- project:
+    name: tungstenfabric-tf-third-party-cache-info-yaml-verify
+    project-name: tungstenfabric-tf-third-party-cache
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-third-party-cache
+    branch: master
+- project:
+    name: tungstenfabric-tf-third-party-packages-info-yaml-verify
+    project-name: tungstenfabric-tf-third-party-packages
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-third-party-packages
+    branch: master
+- project:
+    name: tungstenfabric-tf-tripleo-heat-templates-info-yaml-verify
+    project-name: tungstenfabric-tf-tripleo-heat-templates
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-tripleo-heat-templates
+    branch: master
+- project:
+    name: tungstenfabric-tf-tripleo-puppet-info-yaml-verify
+    project-name: tungstenfabric-tf-tripleo-puppet
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-tripleo-puppet
+    branch: master
+- project:
+    name: tungstenfabric-tf-vcenter-fabric-manager-info-yaml-verify
+    project-name: tungstenfabric-tf-vcenter-fabric-manager
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-vcenter-fabric-manager
+    branch: master
+- project:
+    name: tungstenfabric-tf-vcenter-manager-info-yaml-verify
+    project-name: tungstenfabric-tf-vcenter-manager
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-vcenter-manager
+    branch: master
+- project:
+    name: tungstenfabric-tf-vcenter-plugin-info-yaml-verify
+    project-name: tungstenfabric-tf-vcenter-plugin
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-vcenter-plugin
+    branch: master
+- project:
+    name: tungstenfabric-tf-vijava-info-yaml-verify
+    project-name: tungstenfabric-tf-vijava
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-vijava
+    branch: master
+- project:
+    name: tungstenfabric-tf-vnc-info-yaml-verify
+    project-name: tungstenfabric-tf-vnc
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-vnc
+    branch: master
+- project:
+    name: tungstenfabric-tf-vro-plugin-info-yaml-verify
+    project-name: tungstenfabric-tf-vro-plugin
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-vro-plugin
+    branch: master
 - project:
     name: tungstenfabric-tf-vrouter-info-yaml-verify
     project-name: tungstenfabric-tf-vrouter
@@ -24,4 +327,44 @@
       - gerrit-info-yaml-verify
     build-node: centos7-builder-2c-2g
     project: tungstenfabric/tf-vrouter
+    branch: master
+- project:
+    name: tungstenfabric-tf-vrouter-java-api-info-yaml-verify
+    project-name: tungstenfabric-tf-vrouter-java-api
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-vrouter-java-api
+    branch: master
+- project:
+    name: tungstenfabric-tf-web-controller-info-yaml-verify
+    project-name: tungstenfabric-tf-web-controller
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-web-controller
+    branch: master
+- project:
+    name: tungstenfabric-tf-web-core-info-yaml-verify
+    project-name: tungstenfabric-tf-web-core
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-web-core
+    branch: master
+- project:
+    name: tungstenfabric-tf-webui-third-party-info-yaml-verify
+    project-name: tungstenfabric-tf-webui-third-party
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tf-webui-third-party
+    branch: master
+- project:
+    name: tungstenfabric-tungsten-test-runner-info-yaml-verify
+    project-name: tungstenfabric-tungsten-test-runner
+    jobs:
+      - gerrit-info-yaml-verify
+    build-node: centos7-builder-2c-2g
+    project: tungstenfabric/tungsten-test-runner
     branch: master
