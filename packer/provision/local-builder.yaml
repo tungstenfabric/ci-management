@@ -1,2 +1,36 @@
 ---
 - import_playbook: ../common-packer/provision/baseline.yaml
+
+- hosts: all
+  become_user: root
+  become_method: sudo
+
+  pre_tasks:
+    - include_role: name=lfit.system-update
+
+  tasks:
+    - name: Install TF Packages
+      yum:
+        name:
+          - bind
+          - bind-utils
+          - haproxy
+          - httpd
+        state: present
+        when: ansible_distribution == "CentOS"
+
+    - name: Configure sshd_config
+      lineinfile:
+        dest: /etc/ssh/sshd_config
+        regexp: "^UseDNS"
+        line: "UseDNS no"
+        insertafter: EOF
+        state: present
+        notify: restart sshd
+        when: ansible_distribution == "CentOS"
+
+  handlers:
+    - name: restart sshd
+      service:
+        name: sshd
+        state: restarted
