@@ -28,7 +28,6 @@
         insertafter: EOF
         state: present
         notify: restart sshd
-      when: ansible_distribution == 'CentOS'
 
   handlers:
     - name: restart sshd
