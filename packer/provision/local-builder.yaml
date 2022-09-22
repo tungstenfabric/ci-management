@@ -22,7 +22,7 @@
 
     - name: Configure sshd_config
       lineinfile:
-        dest: /etc/ssh/sshd_config
+        path: /etc/ssh/sshd_config
         regexp: "^UseDNS"
         line: "UseDNS no"
         insertafter: EOF
