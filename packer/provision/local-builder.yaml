@@ -17,7 +17,8 @@
           - haproxy
           - httpd
         state: present
-        when: ansible_distribution == "CentOS"
+      become: true
+      when: ansible_distribution == 'CentOS'
 
     - name: Configure sshd_config
       lineinfile:
@@ -27,7 +28,7 @@
         insertafter: EOF
         state: present
         notify: restart sshd
-        when: ansible_distribution == "CentOS"
+      when: ansible_distribution == 'CentOS'
 
   handlers:
     - name: restart sshd
