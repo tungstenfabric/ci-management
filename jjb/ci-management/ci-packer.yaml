@@ -24,3 +24,4 @@
     templates: builder
     platforms:
       - centos-7
+      - ubuntu-20.04
