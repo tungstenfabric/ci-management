@@ -37,3 +37,12 @@
         name: sshd
         state: restarted
       become: yes
+
+    - name: Install tools
+      apt:
+        name:
+          - linux-crashdump
+          - net-tools
+        state: present
+      become: true
+      when: ansible_distribution == 'Ubuntu'
