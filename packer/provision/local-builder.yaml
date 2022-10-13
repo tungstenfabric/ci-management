@@ -31,13 +31,6 @@
       become: true
       when: ansible_distribution == 'CentOS'
 
-  handlers:
-    - name: restart sshd
-      service:
-        name: sshd
-        state: restarted
-      become: yes
-
     - name: Install tools
       apt:
         name:
