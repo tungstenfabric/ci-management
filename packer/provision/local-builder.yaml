@@ -27,7 +27,6 @@
         line: "UseDNS no"
         insertafter: EOF
         state: present
-      notify: restart sshd
       become: true
       when: ansible_distribution == 'CentOS'
 
